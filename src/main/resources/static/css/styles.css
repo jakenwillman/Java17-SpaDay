@@ -1,0 +1,54 @@
+body {
+    background-color: pink;
+    font-family: 'Oswald', sans-serif;
+}
+
+div {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+h1 {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#polish-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.polish-sample {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+#servicesMenu {
+    padding: 10px;
+    margin: auto;
+}

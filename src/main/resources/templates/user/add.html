@@ -6,15 +6,17 @@
   <title>Sign Up</title>
 </head>
 <body>
-<form method = 'post' th:action="@{/user}">
+<form method = 'post' th:action="@{/user}" >
   <label>
     Username:
     <input type = 'text' name = 'username' th:value="${username}">
+    <p class="error" th:errors="${user.username}"></p>
   </label>
 
   <label>
     Email:
-    <input type = 'email' name = 'email' th:value="${email}">
+    <input name = 'email' th:value="${email}">
+    <p class="error" th:errors="${user.email}"></p>
   </label>
 
   <label>
@@ -25,6 +27,7 @@
   <label>
     Verify Password:
     <input type = 'password' name = 'verify'>
+    <p class="error" th:errors="${user.password}"></p>
   </label>
 
   <p th:text="${error}"></p>
